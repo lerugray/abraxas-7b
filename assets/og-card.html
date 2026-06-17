@@ -9,7 +9,7 @@
     width: 1200px;
     height: 630px;
     overflow: hidden;
-    background: #020304;
+    background: #050402;
     font-family: 'Courier New', 'Lucida Console', monospace;
   }
 
@@ -18,19 +18,18 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(1px 1px at 8%  12%, rgba(26,255,122,0.5) 0%, transparent 100%),
-      radial-gradient(1px 1px at 25% 5%,  rgba(196,200,204,0.35) 0%, transparent 100%),
-      radial-gradient(1px 1px at 72% 18%, rgba(26,255,122,0.3) 0%, transparent 100%),
-      radial-gradient(1px 1px at 90% 8%,  rgba(196,200,204,0.4) 0%, transparent 100%),
-      radial-gradient(1px 1px at 48% 22%, rgba(196,200,204,0.2) 0%, transparent 100%),
-      radial-gradient(1px 1px at 15% 55%, rgba(26,255,122,0.25) 0%, transparent 100%),
-      radial-gradient(1px 1px at 85% 45%, rgba(196,200,204,0.25) 0%, transparent 100%),
-      radial-gradient(1px 1px at 60% 75%, rgba(26,255,122,0.20) 0%, transparent 100%),
-      radial-gradient(1px 1px at 35% 88%, rgba(196,200,204,0.20) 0%, transparent 100%),
-      radial-gradient(2px 2px at 55% 40%, rgba(26,255,122,0.12) 0%, transparent 100%);
+      radial-gradient(1px 1px at 8%  12%, rgba(255,184,48,0.5) 0%, transparent 100%),
+      radial-gradient(1px 1px at 25% 5%,  rgba(220,210,180,0.35) 0%, transparent 100%),
+      radial-gradient(1px 1px at 72% 18%, rgba(255,184,48,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 90% 8%,  rgba(220,210,180,0.4) 0%, transparent 100%),
+      radial-gradient(1px 1px at 48% 22%, rgba(220,210,180,0.2) 0%, transparent 100%),
+      radial-gradient(1px 1px at 15% 55%, rgba(255,184,48,0.25) 0%, transparent 100%),
+      radial-gradient(1px 1px at 85% 45%, rgba(220,210,180,0.25) 0%, transparent 100%),
+      radial-gradient(1px 1px at 60% 75%, rgba(255,184,48,0.20) 0%, transparent 100%),
+      radial-gradient(1px 1px at 35% 88%, rgba(220,210,180,0.20) 0%, transparent 100%),
+      radial-gradient(2px 2px at 55% 40%, rgba(255,184,48,0.12) 0%, transparent 100%);
   }
 
-  /* Subtle glow behind name */
   .glow-blob {
     position: absolute;
     top: 50%;
@@ -38,7 +37,7 @@
     transform: translate(-50%, -50%);
     width: 800px;
     height: 400px;
-    background: radial-gradient(ellipse, rgba(26,255,122,0.04) 0%, transparent 70%);
+    background: radial-gradient(ellipse, rgba(255,184,48,0.05) 0%, transparent 70%);
     pointer-events: none;
   }
 
@@ -52,13 +51,12 @@
     padding: 60px 80px;
   }
 
-  /* Top and bottom border lines */
   .card::before {
     content: '';
     position: absolute;
     top: 28px; left: 60px; right: 60px;
     height: 1px;
-    background: linear-gradient(90deg, transparent, #097a38, transparent);
+    background: linear-gradient(90deg, transparent, #8a5e0a, transparent);
   }
 
   .card::after {
@@ -66,13 +64,13 @@
     position: absolute;
     bottom: 28px; left: 60px; right: 60px;
     height: 1px;
-    background: linear-gradient(90deg, transparent, #097a38, transparent);
+    background: linear-gradient(90deg, transparent, #8a5e0a, transparent);
   }
 
   .lab-tag {
     font-size: 13px;
     letter-spacing: 0.2em;
-    color: #4a5258;
+    color: #5a4e34;
     text-transform: uppercase;
     margin-bottom: 28px;
   }
@@ -81,12 +79,12 @@
     font-size: 96px;
     font-weight: 700;
     letter-spacing: 0.18em;
-    color: #c4c8cc;
+    color: #e0d4b0;
     line-height: 1;
     margin-bottom: 20px;
     text-shadow:
-      0 0 80px rgba(26,255,122,0.22),
-      0 0 30px rgba(26,255,122,0.10);
+      0 0 80px rgba(255,184,48,0.22),
+      0 0 30px rgba(255,184,48,0.10);
   }
 
   .divider {
@@ -100,22 +98,22 @@
   .div-line {
     flex: 1;
     height: 1px;
-    background: linear-gradient(90deg, transparent, #054f24);
+    background: linear-gradient(90deg, transparent, #6b4a08);
   }
 
   .div-line:last-child {
-    background: linear-gradient(90deg, #054f24, transparent);
+    background: linear-gradient(90deg, #6b4a08, transparent);
   }
 
   .div-mark {
-    color: #097a38;
+    color: #c8880c;
     font-size: 13px;
     letter-spacing: 0.15em;
   }
 
   .epithet {
     font-size: 18px;
-    color: #097a38;
+    color: #c8880c;
     letter-spacing: 0.06em;
     font-style: italic;
     margin-bottom: 28px;
@@ -129,12 +127,12 @@
 
   .tag {
     font-size: 13px;
-    color: #097a38;
-    border: 1px solid #054f24;
+    color: #c8880c;
+    border: 1px solid #6b4a08;
     padding: 4px 14px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    background: rgba(26,255,122,0.03);
+    background: rgba(255,184,48,0.03);
   }
 </style>
 </head>
@@ -143,17 +141,17 @@
   <div class="glow-blob"></div>
   <div class="card">
     <div class="lab-tag">The Elect &mdash; Voice Lab</div>
-    <div class="name">NYARLATHOTEP</div>
+    <div class="name">ABRAXAS</div>
     <div class="divider">
       <span class="div-line"></span>
       <span class="div-mark">&#x25C6;</span>
       <span class="div-line"></span>
     </div>
-    <div class="epithet">The Crawling Chaos, rendered in seven billion parameters</div>
+    <div class="epithet">A Gnostic divine-voice oracle &mdash; divinity as gnosis, in seven billion parameters</div>
     <div class="tags">
       <span class="tag">Qwen2.5-7B</span>
       <span class="tag">Local Ollama</span>
-      <span class="tag">Apache-2.0</span>
+      <span class="tag">CC-BY-NC-4.0</span>
     </div>
   </div>
 </body>
